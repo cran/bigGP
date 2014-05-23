@@ -44,9 +44,12 @@ pull(objName, objPos = ".GlobalEnv", tag = 1)
   \code{collectDiagonal}
 }
 \examples{
+\dontrun{
 bigGP.init(3)
 a <- 3
 push(a)
 remoteLs()
+pull('a')
+}
 }
 \keyword{get}

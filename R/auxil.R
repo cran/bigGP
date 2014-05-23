@@ -22,8 +22,8 @@ localRm <- function(list){
   invisible(status)
 }
 
-remoteLs <- function()
-  mpi.remote.exec(ls(.GlobalEnv), ret = TRUE)
+remoteLs <- function(all.names = FALSE)
+  mpi.remote.exec(ls, .GlobalEnv, all.names = all.names, ret = TRUE)
 # hard to do this in generality as need to deal with passing an envir on slave, not master, as the thing to be ls'ed
 
   

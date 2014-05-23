@@ -1,0 +1,5 @@
+Version 0.1-3 (5/23/14): 
+
+* Wrapped all examples in \dontrun{} to satisfy CRAN requirements that examples not leave processes running or have more than two processes running.
+
+* Added some additional info to the INSTALL file.

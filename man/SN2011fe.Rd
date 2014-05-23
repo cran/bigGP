@@ -30,7 +30,7 @@ columns:
   \item{\code{fluxerror}: }{estimated standard deviation of the
     error in measurement of the flux.}
   \item{\code{phaseindex}: }{1-based index value of the time of
-    measurement [right???]}
+    measurement [check this]}
   \item{\code{logwavelength}: }{log of wavelength.}
 }
 

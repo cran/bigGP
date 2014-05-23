@@ -51,7 +51,8 @@ input2Pos = '.GlobalEnv', outputPos = '.GlobalEnv')
      string specifying a function to be searched for from the
      environment of the call to \code{remoteCalc}.
   }
-\examples{
+  \examples{
+\dontrun{
 bigGP.init(3)
 mpi.bcast.cmd(x <- 0:mpi.comm.rank())
 remoteCalc('x', FUN = exp, outputName = 'exp.x')
@@ -59,5 +60,6 @@ remoteLs()
 pull('exp.x')
 remoteCalc('x', 'exp.x', FUN = `+`, outputName = 'silly')
 pull('silly')
+}
 }
 

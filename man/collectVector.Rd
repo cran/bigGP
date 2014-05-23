@@ -40,11 +40,13 @@ collectVector(objName, objPos = '.GlobalEnv', n, h = 1)
   \code{distributeVector}
 }
 \examples{
+\dontrun{
 bigGP.init(3)
 n <- 3000
 x <- rnorm(n)
 distributeVector(x, 'tmp', n = n)
 y <- collectVector('tmp', n = n)
 identical(x, y)
+}
 }
 

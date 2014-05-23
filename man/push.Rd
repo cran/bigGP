@@ -34,4 +34,12 @@ push(.tmp, objName = deparse(substitute(.tmp)), objPos = ".GlobalEnv")
   \code{pull}
   \code{distributeVector}
 }
+\examples{
+\dontrun{
+bigGP.init(3)
+a <- 3
+push(a)
+remoteLs()
+}
+}
 \keyword{assign}

@@ -19,11 +19,10 @@ bigGP.init <- function(P = NULL, parallelRNGpkg = "rlecuyer", seed = 0){
       stop("bigGP.init: error in loading bigGP on slaves.")
     mpi.remote.exec(.Call("init_comms", as.integer(mpi.comm.c2f()), PACKAGE="bigGP"), ret = FALSE)
     out <- .Call("init_comms", as.integer(mpi.comm.c2f()), PACKAGE="bigGP")
-
     
     if(out != .bigGP$D)
       stop("bigGP.init: number of processes may not be consistent with the partition number, D.")
-
+    
     mpi.bcast.cmd(.bigGP.fill())
         
     cat("... Done.\n")
@@ -261,24 +260,34 @@ bigGP.quit <- function(save = "no"){
   }
 }
 
+
 bigGP.exit <- function(){
   if (is.loaded("mpi_initialize")){
     if (mpi.comm.size(1) > 0) {
       mpi.close.Rslaves()
     }
-    detach(package:bigGP)
     mpi.exit()
+    detach(package:bigGP, unload = TRUE)
   }
 }
 
-.onUnload <- function(libpath){
-  if (is.loaded("mpi_initialize")){
-    if (mpi.comm.size(1) > 0) {
-      mpi.close.Rslaves()
-    }
-    mpi.exit()
-  }
-}
+# removed this for 0.1-3 as it was causing an error in R CMD check:
+#* checking whether the namespace can be unloaded cleanly ... WARNING
+#---- unloading
+#[1] "Detaching Rmpi. Rmpi cannot be used unless relaunching R."
+#Warning message:
+#.onUnload failed in unloadNamespace() for 'bigGP', details:
+#  call: detach(package:Rmpi)
+#  error: invalid 'name' argument 
+
+#.onUnload <- function(libpath){
+#  if (is.loaded("mpi_initialize")){
+#    if (mpi.comm.size(1) > 0) {
+#      mpi.close.Rslaves()
+#    }
+#    mpi.exit()
+#  }
+#}
 
 if(FALSE) {
   .Last.lib <- function(libpath){

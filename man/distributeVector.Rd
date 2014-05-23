@@ -41,10 +41,12 @@ distributeVector(obj, objName = deparse(substitute(obj)), objPos = '.GlobalEnv',
   \code{collectDiagonal}
 }
 \examples{
+\dontrun{
 bigGP.init(3)
 n <- 3000
 x <- rnorm(n)
 distributeVector(x, 'tmp', n = n)
 y <- collectVector('tmp', n = n)
 identical(x, y)
+}
 }

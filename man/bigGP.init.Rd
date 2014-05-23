@@ -44,5 +44,7 @@ bigGP.init(P = NULL, parallelRNGpkg = "rlecuyer", seed = 0)
   seeds on each slave process. 
 }
 \examples{
+\dontrun{
 bigGP.init(3, seed = 1)
+}
 }

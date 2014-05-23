@@ -8,3 +8,6 @@ exportClasses(
 )
 
 useDynLib(bigGP, .registration = TRUE)
+
+import("Rmpi")
+import("methods")

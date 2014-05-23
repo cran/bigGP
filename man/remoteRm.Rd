@@ -13,11 +13,11 @@ remoteRm(..., list = character())
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{\dots}{
-    ...: the objects to be removed, as names (unquoted) or character
+    the objects to be removed, as names (unquoted) or character
     strings (quoted). 
 }
   \item{list}{
-    a charcter vector naming objects to be removed
+    a character vector naming objects to be removed
 }
 }
 \details{
@@ -32,6 +32,7 @@ remoteRm(..., list = character())
   \code{remoteLs}
 }
 \examples{
+\dontrun{
 bigGP.init(3)
 a <- 3
 b <- 7
@@ -39,6 +40,7 @@ push(a); push(b)
 remoteLs()
 remoteRm(a)
 remoteLs()
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

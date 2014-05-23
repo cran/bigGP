@@ -23,7 +23,7 @@ bigGP.quit(save = "no")
   execution context, specifically MPI, when R is started via MPI such as
   by calling mpirun or analogous executables. They close the slave
   processes and then invoke either \code{mpi.exit} or \code{mpi.quit}.
-
+  
    If leaving R altogether, one simply uses \code{bigGP.quit}. 
 }
 \seealso{

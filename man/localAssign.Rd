@@ -32,9 +32,11 @@ localAssign(nameToAssign, currentName, objPos = ".GlobalEnv")
   kriging use case contained in \code{krigeProblem} ReferenceClass.
 }
 \examples{
+\dontrun{
 bigGP.init(3)
 mpi.bcast.cmd(e <- new.env())
 mpi.bcast.cmd(a <- 7)
 mpi.remote.exec(localAssign, "x", "a", objPos = "e")
 mpi.remote.exec(e$x, ret = TRUE)
+}
 }
