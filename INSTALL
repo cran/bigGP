@@ -14,12 +14,12 @@ our test systems,
 
 R CMD INSTALL --configure-args="--with-mpi-include='/usr/common/usg/openmpi/1.4.5/intel/include' \
 --with-mpi-libpath='/usr/common/usg/openmpi/1.4.5/intel/lib' \
---with-mpi-type='OPENMPI' "  bigGP_0.1-2.tar.gz
+--with-mpi-type='OPENMPI' "  bigGP_0.1-4.tar.gz
 
 and here is an example installation on another of our test systems:
 
 R CMD INSTALL --configure-args="--with-mpi=/opt/cray/mpt/5.4.0/xt/gemini/mpich2-gnu/46/" \
-bigGP_0.1-2.tar.gz
+bigGP_0.1-4.tar.gz
 
 By default we link against the same BLAS as that used by the R
 installed on the system. Note that computational efficiency relies
@@ -34,9 +34,9 @@ used by R, you may be able to use the configure.alt file provided with
 the package.  Rename it to 'configure'.  It will then search for your
 system default BLAS on package installation.  You can change which
 BLAS it uses via --with-blas in the --configure-args.  The files
-configure.ac, configure.alt.ac, ax_blas.m4, and ax_lapack.m4 are
-provided in case you need to generate a new configure file using
-autoconf.
+configure.ac, configure.alt.ac, ax_blas.m4, and ax_lapack.m4 in the 
+tools subdirectory are provided in case you need to generate a new 
+configure file using autoconf.
 
 Here is an example installation that specifies a specific path to MKL
 BLAS installed on one of our test systems (as well as the MPI
@@ -46,7 +46,7 @@ R CMD INSTALL --configure-args="--with-blas='-L/usr/common/usg/mkl/10.2.2.025/li
 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread' \
 --with-mpi-include='/usr/common/usg/openmpi/1.4.5/intel/include' \
 --with-mpi-libpath='/usr/common/usg/openmpi/1.4.5/intel/lib' \
---with-mpi-type='OPENMPI' "  bigGP_0.1-2.tar.gz
+--with-mpi-type='OPENMPI' "  bigGP_0.1-4.tar.gz
 
 Finally note that in our test installation on Fedora, we needed to set
 LD_LIBRARY_PATH to be able to find libmpi.so (in particular including

@@ -44,7 +44,7 @@ bigGP.init <- function(P = NULL, parallelRNGpkg = "rlecuyer", seed = 0){
           if(sum(unlist(mpi.remote.exec(require, "rsprng", ret = TRUE))) != .bigGP$P)
            stop("bigGP.init: error in loading rsprng on slaves.")
           mpi.bcast.Robj2slave(seed)
-          mpi.bcast.cmd(init.sprng(nstream = .bigGP$P, streamno = mpi.comm.rank()-1, seed = seed))
+          mpi.bcast.cmd(rsprng::init.sprng(nstream = .bigGP$P, streamno = mpi.comm.rank()-1, seed = seed))
         } else {
           warning('bigGP.init: parallelRNGpkg ', parallelRNGpkg, ' not recognized. Initializing process seeds sequentially; not guaranteed to give independent streams; please use rlecuyer or rsprng to be certain.')
           mpi.bcast.Robj2slave(seed)

@@ -7,7 +7,9 @@
   \code{collectRectangularMatrix} retrieves a distributed rectangular matrix from the slave
   processes, reconstructing the blocks correctly on the master process. 
   Objects can be copied from environments, lists, and
-  ReferenceClass objects as well as the global environment on the slave processes.
+  ReferenceClass objects as well as the global environment on the slave
+  processes. WARNING: do not use with a distributed symmetric square matrix; instead
+  use \code{collectTriangularMatrix}.
 }
 \usage{
 collectRectangularMatrix(objName, objPos = '.GlobalEnv', n1, n2, h1 = 1, h2 = 1)
