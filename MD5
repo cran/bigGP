@@ -1,7 +1,7 @@
-c8b9c6b8a8dee762f8cb5c37b1e980f0 *DESCRIPTION
+4cce6781a1e562f1a340ec4e3631399c *DESCRIPTION
 43036c21d45fc733fcb136c2b5fb0ec8 *INSTALL
 3664b883d34d20d6d970db5c7193dcc1 *NAMESPACE
-a9e8c3cf23eb3d3efdf39de3f16ac16e *NEWS
+70965f1baa525a96cf23ed96b875f75a *NEWS
 24050de9c428468873db864d879567a1 *R/auxil.R
 b0e13f2fd9dcba0207ace6e5d8df8601 *R/bigGP.R
 88c029b2455fcdc7fcb9ceb1b85469ec *R/collectDistribute.R
@@ -12,15 +12,15 @@ b0e13f2fd9dcba0207ace6e5d8df8601 *R/bigGP.R
 5a17635126a3109858a6a35c3abf8397 *cleanup
 ba8eba79de017e5523b984c4cb83f2f2 *configure
 7aba3bde0c2e1920cea4566844aa9a2f *configure.ac
-3f337a0570b14e56dde36ab08adc09ee *data/SN2011fe.rda
+703f3d1fa287d75abd620899578baea6 *data/SN2011fe.rda
 c0e0e15a233195fea71a13b180799710 *data/datalist
 aee2ad1603de75761a844034fa781c83 *demo/00Index
 81395c00e178d2769c67bc8c7b98d70c *demo/article-example.R
-731d827b58b3dbad9d5ad65b96f59b37 *inst/CITATION
+c0e094b567de0afecb0044238f5a5b90 *inst/CITATION
 0ceb705aafea2d264ac0925a396eb5fb *man/SN2011fe.Rd
 aca9507a0e838fbe1cb5fbadf114e62a *man/alloc.Rd
 666f7aa15ba15124283897ccb9a10a8b *man/bigGP-meta.Rd
-a1fc1b13cf17a7450f77e6aa7d7b2748 *man/bigGP.Rd
+34a5664a4d61d6a705ba8752265c9200 *man/bigGP.Rd
 ddf4a44b09ac6acae2052984a684c989 *man/bigGP.exit.Rd
 338ac1a1647a6f46870c846a9b33b1e1 *man/bigGP.init.Rd
 9e353021637985eef0859fb7e98097b4 *man/calcD.Rd
@@ -32,7 +32,7 @@ edf1416de0097bc7622cf1d2ec25c297 *man/collectTriangularMatrix.Rd
 240096f45bc2298174118b5554af66d2 *man/distributeVector.Rd
 d9ff749d967e0ab9a1eb3010f8e6b8f6 *man/distributedKrigeProblem-class.Rd
 a9228c3f1d595a935c8f9e255e08302e *man/getDistributedVectorLength.Rd
-03349fafd0cb6472925a2ff311c4ebde *man/krigeProblem-class.Rd
+f56ed1461c61a44a462214942291df52 *man/krigeProblem-class.Rd
 e2dbb135e83902e607b1372728c8c655 *man/localAssign.Rd
 d18803e25a51850d26ee1ab455f8b93d *man/localCalc.Rd
 ee7ac342e9c52485d5b9f7595812ef48 *man/localCollectVector.Rd

@@ -1,3 +1,7 @@
+Version 0.1-5 (1/16/15):
+
+* modified CITATION and \references in .Rd files to refer to published JSS article about the package
+
 Version 0.1-4 (12/3/14): 
 
 * moved ax_{blas,lapack}.m4 and configure.alt{,.ac} to tools subdirectory to satisfy CRAN requirements on top-level directory content.
