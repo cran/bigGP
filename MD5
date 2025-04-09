@@ -1,7 +1,7 @@
-5f6e9257f6b519aabd42025d679fa2bd *DESCRIPTION
+203b00e872a4bb08ac1bff774f79c0e0 *DESCRIPTION
 43036c21d45fc733fcb136c2b5fb0ec8 *INSTALL
 2816bdade8b0d712957c9702c235b395 *NAMESPACE
-5d48a1d9d95f563be9bf1fa1e5655d1e *NEWS
+19e8d8536ce8785432c71e2050450498 *NEWS
 24050de9c428468873db864d879567a1 *R/auxil.R
 b9416bd9adfdb610598460aeaaf3fd92 *R/bigGP.R
 cdbfd766d1383ed94529c8f2476f33da *R/collectDistribute.R
@@ -10,11 +10,11 @@ e0e0830d065340d710ced55566eb2b39 *R/distributedComputation.R
 6ba3806da67055f56155720d1fefd347 *README
 a51cea6ccc3bc4484c83761d8159f7ef *README.md
 5ba6a01d6ead6d6303ca57b8b38968db *TODO
-ea124a494ad7922985532ad3b308e4d5 *build/partial.rdb
+f61db891eb928123aba4412ca322f508 *build/partial.rdb
 5a17635126a3109858a6a35c3abf8397 *cleanup
-4c1b191eb30dfb409bc9d6657d4742c4 *configure
-813a65311b41d345f1defed7d916a960 *configure.ac
-c7eb02c1cab4bbd2980d9b49ba697c6a *data/SN2011fe.rda
+f62f71c0b7d2ec8ce8cae87ff02b141a *configure
+8c3929906471cfed3d566bfea902c9c4 *configure.ac
+9ac94501f05aed897adf991c0c66f846 *data/SN2011fe.rda
 aee2ad1603de75761a844034fa781c83 *demo/00Index
 81395c00e178d2769c67bc8c7b98d70c *demo/article-example.R
 0aca8425a5efbb1cfc7cd4e6a3ec949c *inst/CITATION
@@ -22,7 +22,7 @@ d2c367f39ce8d5e9459b5b1a8be1cffb *man/SN2011fe.Rd
 aca9507a0e838fbe1cb5fbadf114e62a *man/alloc.Rd
 666f7aa15ba15124283897ccb9a10a8b *man/bigGP-meta.Rd
 15cabd1a8a3450f721e0ecd5c682f296 *man/bigGP.Rd
-ddf4a44b09ac6acae2052984a684c989 *man/bigGP.exit.Rd
+bc0c115d8bd7e7f45699f51e96f0e760 *man/bigGP.exit.Rd
 338ac1a1647a6f46870c846a9b33b1e1 *man/bigGP.init.Rd
 9e353021637985eef0859fb7e98097b4 *man/calcD.Rd
 d368ad26b0d517846405f8d857df526e *man/calcIJ.Rd
